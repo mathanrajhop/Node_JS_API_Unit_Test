@@ -17,9 +17,9 @@ function init() {
     res.send('Node JS API Unit Test')
   });
 
-  app.listen(PORT,() =>{
+  return app.listen(PORT,() =>{
     console.log('Server started on port 3000...');
   });
 }
 
-init()
+module.exports = init()
